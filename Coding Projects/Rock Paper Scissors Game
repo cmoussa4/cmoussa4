@@ -1,1 +1,149 @@
+using System;
+using System.Collections.Generic;
+
+namespace revision
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            //Rock,Paper,Scissors Game
+            //Random generator for the A.I and variables for the game
+            Random rand = new Random();
+            int attempts = 0;
+            int wins = 0;
+            int AIwins = 0;
+            Console.WriteLine("Face off against the A.I in a match of rock,paper,scissors!");
+            Console.WriteLine("[1]Rock [2]Paper [3]Scissors");
+            //while loop that runs for 10 matches of the game and switch statements inside oour while loop for what our pick choice will be
+            while (attempts < 10)
+            {
+
+                int pick = int.Parse(Console.ReadLine());
+                switch (pick)
+                {
+                    case 1:
+                        Console.WriteLine("You choose Rock");
+                        break;
+                    case 2:
+                        Console.WriteLine("You choose Paper");
+                        break;
+                    case 3:
+                        Console.WriteLine("You choose Scissors");
+                        break;
+
+
+                }
+                //switch statements for our A.I pick with a random number from 1 to 3
+                int AIpick = rand.Next(1, 4);
+                switch (AIpick)
+                {
+                    case 1:
+                        Console.WriteLine("Enemy chooses Rock");
+                        break;
+                    case 2:
+                        Console.WriteLine("Enemy chooses Paper");
+                        break;
+                    case 3:
+                        Console.WriteLine("Enemy chooses Scissors");
+                        break;
+
+                }
+                //if statements for the various outcomes and assigning variables that increment for the respective outcomes
+                if(pick == 1 && AIpick == 1)
+                {
+                    Console.WriteLine("DRAW!");
+                    
+                    attempts++;
+                }
+                else if (pick == 2 && AIpick == 2)
+                {
+                    Console.WriteLine("DRAW!");
+                    
+                    attempts++;
+                }
+                else if (pick == 3 && AIpick == 3)
+                {
+                    Console.WriteLine("DRAW!");
+                    
+                    attempts++;
+                }
+                else if(pick == 1 && AIpick == 2)
+                {
+                    Console.WriteLine("YOU LOSE!");
+                    AIwins++;
+                    attempts++;
+                }
+                else if (pick == 1 && AIpick == 3)
+                {
+                    Console.WriteLine("YOU WIN!");
+                    wins++;
+                    attempts++;
+                    
+                }
+                else if (pick == 2 && AIpick == 1)
+                {
+                    Console.WriteLine("YOU WIN!");
+                    wins++;
+                    attempts++;
+                    
+                }
+                else if (pick == 2 && AIpick == 3)
+                {
+                    Console.WriteLine("YOU LOSE!");
+                    AIwins++;
+                    attempts++;
+                }
+                else if (pick == 3 && AIpick == 1)
+                {
+                    Console.WriteLine("YOU LOSE!");
+                    AIwins++;
+                    attempts++;
+                }
+                else if (pick == 3 && AIpick == 2)
+                {
+                    Console.WriteLine("YOU WIN");
+                    wins++;
+                    attempts++;
+                    
+                }
+                else 
+                {
+                    Console.WriteLine("ERROR");
+                    
+                }
+
+
+            }
+            //if statemnts that display the score between us and the A.I
+            if(wins > AIwins)
+            {
+                Console.WriteLine("----------------------------\n");
+                Console.WriteLine("You win the battle");
+                Console.WriteLine("YOUR SCORE: " + wins + "\nA.I SCORE: " + AIwins);
+                
+            }
+            else if(AIwins > wins)
+            {
+                Console.WriteLine("----------------------------\n");
+                Console.WriteLine("You lost the battle");
+                Console.WriteLine("YOUR SCORE: " + wins + "\nA.I SCORE: " + AIwins);
+            }
+            else if(wins == AIwins)
+            {
+                Console.WriteLine("----------------------------\n");
+                Console.WriteLine("You both draw the battle");
+                Console.WriteLine("YOUR SCORE: " + wins + "\nA.I SCORE: " + AIwins);
+            }
+            else
+            {
+                Console.WriteLine("----------------------------\n");
+                Console.WriteLine("ERROR");
+            }
+
+            Console.WriteLine("THANKS FOR PLAYING!");
+        }
+    }
+}
 
