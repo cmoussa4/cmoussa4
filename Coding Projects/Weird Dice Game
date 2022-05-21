@@ -1,1 +1,110 @@
+using System;
+using System.Collections.Generic;
 
+namespace revision
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            Random random = new Random();
+            int dice = 0;
+            int attempts = 0;
+            int points = 0;
+            Console.WriteLine("Roll the dice, each number is the points that are added to your talley, get the best score you can!");
+            Console.WriteLine("BTW there are 8 different endings, try and get them all...Which is basically near impossible ");
+            Console.WriteLine("press a key to roll the dice");
+            while(attempts < 10)
+            {
+                
+                Console.ReadKey();
+                attempts++;
+                dice = random.Next(1, 7);
+                Console.WriteLine(dice);
+                if (dice == 1)
+                {
+                    points += 1;
+                }
+                if (dice == 2)
+                {
+                    points += 2;
+                }
+                if (dice == 3)
+                {
+                    points += 3;
+                }
+                if (dice == 4)
+                {
+                    points += 4;
+                }
+                if (dice == 5)
+                {
+                    points += 5;
+                }
+                if (dice == 6)
+                {
+                    points += 6;
+                }
+                Console.WriteLine("Points: " + points + " Attempts: " + attempts);
+                Console.WriteLine("------------------");
+                
+                
+            }
+
+            Console.WriteLine("Your Score is " + points + " Points");
+
+            if(points == 10)
+            {
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("you got 10 Points.......... \nBRUH");
+                Console.WriteLine("----------------------------------------");
+            }
+            else if (points == 11 || points == 12 || points == 13 || points == 14 || points == 15 || points == 16 || points == 17 || points == 18 || points == 19)
+            {
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("you got less than 20 Points! \nR.I.P BOZO");
+                Console.WriteLine("----------------------------------------");
+            }
+            else if (points == 20 || points == 21 || points == 22 || points == 23 || points == 24 || points == 25 || points == 26 || points == 27 || points == 28 || points == 29)
+            {
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("you got 20-29 Points! \nThis is a very average ending......Sorry");
+                Console.WriteLine("----------------------------------------");
+            }
+            else if (points == 30 || points == 31 || points == 32 || points == 33 || points == 34 || points == 35 || points == 36 || points == 37 || points == 38 || points == 39)
+            {
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("you got 30-39 Points! \nyour luck is pretty good, have a cookie ");
+                Console.WriteLine("----------------------------------------");
+            }
+            else if (points == 40 || points == 41 || points == 42 || points == 43 || points == 44 || points == 45 || points ==46 || points == 47 || points == 48 || points == 49)
+            {
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("you got 40-49 Points! \nyour luck is incredible you need to enter the lottery!!!!!!!!!!");
+                Console.WriteLine("----------------------------------------");
+            }
+            else if (points == 50 || points == 51 || points == 52 || points == 53 || points == 54 || points == 55 || points == 56 || points == 57 || points == 58 || points == 59)
+            {
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("you got 50-59 Points! \nYOUR LUCK IS UNBELIEVABLE YOU ARE THE CHOSEN ONE!!!!!!!!!!!!!!!!!!");
+                Console.WriteLine("----------------------------------------");
+            }
+            else if(points == 60)
+            {
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("you got a.......... perfect 60 Points \n .......God? is that you?");
+                Console.WriteLine("----------------------------------------");
+            }
+            else
+            {
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("you got a.......... uh,an error \nCongatulations on breaking the program!");
+                Console.WriteLine("----------------------------------------");
+            }
+            
+
+        }
+    }
+}
