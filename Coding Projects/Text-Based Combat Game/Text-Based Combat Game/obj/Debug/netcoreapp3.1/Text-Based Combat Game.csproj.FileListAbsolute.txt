@@ -1,0 +1,14 @@
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\bin\Debug\netcoreapp3.1\Text-Based Combat Game.exe
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\bin\Debug\netcoreapp3.1\Text-Based Combat Game.deps.json
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\bin\Debug\netcoreapp3.1\Text-Based Combat Game.runtimeconfig.json
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\bin\Debug\netcoreapp3.1\Text-Based Combat Game.runtimeconfig.dev.json
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\bin\Debug\netcoreapp3.1\Text-Based Combat Game.dll
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\bin\Debug\netcoreapp3.1\Text-Based Combat Game.pdb
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\obj\Debug\netcoreapp3.1\Text-Based Combat Game.csproj.AssemblyReference.cache
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\obj\Debug\netcoreapp3.1\Text-Based Combat Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\obj\Debug\netcoreapp3.1\Text-Based Combat Game.AssemblyInfoInputs.cache
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\obj\Debug\netcoreapp3.1\Text-Based Combat Game.AssemblyInfo.cs
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\obj\Debug\netcoreapp3.1\Text-Based Combat Game.csproj.CoreCompileInputs.cache
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\obj\Debug\netcoreapp3.1\Text-Based Combat Game.dll
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\obj\Debug\netcoreapp3.1\Text-Based Combat Game.pdb
+C:\Users\lella\source\repos\Text-Based Combat Game\Text-Based Combat Game\obj\Debug\netcoreapp3.1\Text-Based Combat Game.genruntimeconfig.cache
