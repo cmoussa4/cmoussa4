@@ -9,6 +9,7 @@ namespace revision
 
         static void Main(string[] args)
         {
+            //Generator
 
             Random random = new Random();
             int decision;

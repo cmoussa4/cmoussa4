@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lella\\source\\repos\\Text-Based Combat Game\\Text-Based Combat Game\\Text-Based Combat Game.csproj": {}
+    "C:\\Users\\lella\\Documents\\GitHub\\cmoussa4\\Coding Projects\\Text-Based Combat Game\\Text-Based Combat Game\\Text-Based Combat Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lella\\source\\repos\\Text-Based Combat Game\\Text-Based Combat Game\\Text-Based Combat Game.csproj": {
+    "C:\\Users\\lella\\Documents\\GitHub\\cmoussa4\\Coding Projects\\Text-Based Combat Game\\Text-Based Combat Game\\Text-Based Combat Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lella\\source\\repos\\Text-Based Combat Game\\Text-Based Combat Game\\Text-Based Combat Game.csproj",
+        "projectUniqueName": "C:\\Users\\lella\\Documents\\GitHub\\cmoussa4\\Coding Projects\\Text-Based Combat Game\\Text-Based Combat Game\\Text-Based Combat Game.csproj",
         "projectName": "Text-Based Combat Game",
-        "projectPath": "C:\\Users\\lella\\source\\repos\\Text-Based Combat Game\\Text-Based Combat Game\\Text-Based Combat Game.csproj",
+        "projectPath": "C:\\Users\\lella\\Documents\\GitHub\\cmoussa4\\Coding Projects\\Text-Based Combat Game\\Text-Based Combat Game\\Text-Based Combat Game.csproj",
         "packagesPath": "C:\\Users\\lella\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lella\\source\\repos\\Text-Based Combat Game\\Text-Based Combat Game\\obj\\",
+        "outputPath": "C:\\Users\\lella\\Documents\\GitHub\\cmoussa4\\Coding Projects\\Text-Based Combat Game\\Text-Based Combat Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
