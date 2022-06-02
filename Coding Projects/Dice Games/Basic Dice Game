@@ -1,0 +1,23 @@
+using System;
+
+namespace Practice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rand = new Random();
+            int dice = 0;
+            int attempts = 0;
+            Console.WriteLine("keep rolling the dice till you get a 6!\nPress any key to roll");
+            while(dice!= 6)
+            {
+                Console.ReadKey();
+                dice = rand.Next(1, 7);
+                Console.WriteLine(dice);
+                attempts++;
+            }
+            Console.WriteLine("it took you " + attempts + " attempts to roll a 6\nThanks for playing!");
+        }
+    }
+}
