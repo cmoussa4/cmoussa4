@@ -1,0 +1,45 @@
+using System;
+
+namespace Practice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rand = new Random();
+            
+            int winnum = rand.Next(1, 51);
+            int attempts = 0;
+            Console.WriteLine("Welcome to guess that number!");
+            Console.WriteLine("Guess the correct number between 1 and 50!");
+            int guess = 0;
+            while(guess!= winnum)
+            {
+                Console.WriteLine("Enter your guess: ");
+                guess = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("----------");
+                if (guess > winnum)
+                {
+                    Console.WriteLine("Guess Lower");
+                    attempts++;
+                }
+                else if (guess < winnum)
+                {
+                    Console.WriteLine("Guess Higher");
+                    attempts++;
+                }
+                else if(guess == winnum)
+                {
+                    Console.WriteLine("You guessed the right number!");
+                    attempts++;
+                }
+                else
+                {
+                    Console.WriteLine("ERROR");
+                }
+            }
+            Console.WriteLine("-------------------------\nit took you " + attempts + " attempts to guess the number");
+            Console.WriteLine("Thanks For Playing!");
+        }
+    }
+}
