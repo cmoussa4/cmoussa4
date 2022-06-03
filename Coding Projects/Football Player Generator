@@ -1,0 +1,33 @@
+using System;
+
+namespace Practice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rand = new Random();
+            string[] names = { "Rob", "Charles", "Henderson", "Jose", "Mohamed", "Juan", "Caleb", "Mark", "Chris", "Vincenzo", "Brody", "Kenma", "Toby","Francesco","Olson","Ali","Jin-Woo","Michael","Jamal" };
+            int shirtnumber = 0;
+            string[] clubs = { "Liverpool", "Manchester United", "Tottenham", "Chelsea", "Arsenal", "Manchester City", "PSG", "Bayern Munich", "Borussia Dortmund", "Ac Milan", "Juventus", "Inter Milan", "Napoli", "AS Roma", "Real Madrid", "Barcelona", "Atletico Madrid" };
+            string[] position = { "GoalKeeper", "Defender", "Midfielder", "Striker" };
+            Console.WriteLine("Press any key to generate a football player");
+            while (shirtnumber != 101)
+            {
+                Console.ReadKey();
+                Console.WriteLine("Generating Player...");
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("-------------");
+                shirtnumber = rand.Next(0, 100);
+                int nameindex = rand.Next(names.Length);
+                int clubindex = rand.Next(clubs.Length);
+                int positionindex = rand.Next(position.Length);
+                Console.WriteLine("Name: " + names[nameindex]);
+                Console.WriteLine("Shirt Number: " + shirtnumber);
+                Console.WriteLine("Club: " + clubs[clubindex]);
+                Console.WriteLine("Position: " + position[positionindex]);
+
+            }
+        }
+    } 
+}
