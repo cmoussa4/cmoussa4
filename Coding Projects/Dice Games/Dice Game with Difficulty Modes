@@ -2,7 +2,7 @@ using System;
 
 namespace Practice
 {
-    class Program
+    class Practice
     {
         static void Main(string[] args)
         {
@@ -11,62 +11,59 @@ namespace Practice
             int dice2 = 0;
             int dice3 = 0;
             int attempts = 0;
-            int num = 10;
+            
             Console.WriteLine("Welcome to Dice Arcade!");
             Console.WriteLine("What Difficulty?\nPress[1]for Easy [2]for Medium [3] for Hard");
             int choice = Convert.ToInt32(Console.ReadLine());
-            if(choice == 1)
+            switch (choice)
             {
-                Console.WriteLine("Welcome to Easy mode, all you have to do is roll the dice until you get a 6!\nPress any key to roll the dice");
-                while (dice1 != 6)
-                {
-                    Console.WriteLine("-------");
-                    Console.ReadKey();
-                    dice1 = rand.Next(1, 7);
-                    Console.WriteLine(dice1);
-                    attempts++;
-                }
-                Console.WriteLine("it took you " + attempts + " attempts to roll a 6");
+                case 1:
+                    Console.WriteLine("Welcome to Easy mode, all you have to do is roll the dice until you get a 6!\nPress any key to roll the dice");
+                    while (dice1 != 6)
+                    {
+                        Console.WriteLine("-------");
+                        Console.ReadKey();
+                        dice1 = rand.Next(1, 7);
+                        Console.WriteLine(dice1);
+                        attempts++;
+                    }
+                    Console.WriteLine("it took you " + attempts + " attempts to roll a 6");
+                    break;
+                case 2:
+                    Console.WriteLine("Welcome to Medium mode,you have to roll 2 dice until they match!\nPress any key to roll the dice");
+                    do
+                    {
+                        Console.WriteLine("-------");
+                        Console.ReadKey();
+                        dice1 = rand.Next(1, 7);
+                        Console.WriteLine(dice1);
+                        dice2 = rand.Next(1, 7);
+                        Console.WriteLine(dice2);
+                        attempts++;
+                    } while (dice1 != dice2);
+                    Console.WriteLine("it took you " + attempts + " attempts to roll matching dice");
+                    break;
+                case 3:
+                    Console.WriteLine("Welcome to Hard mode,you have to roll 3 dice until they all match!\nPress any key to roll the dice");
+                    do
+                    {
+                        Console.WriteLine("-------");
+                        Console.ReadKey();
+                        dice1 = rand.Next(1, 7);
+                        Console.WriteLine(dice1);
+                        dice2 = rand.Next(1, 7);
+                        Console.WriteLine(dice2);
+                        dice3 = rand.Next(1, 7);
+                        Console.WriteLine(dice3);
+                        attempts++;
+                    } while (dice1 != dice2 || dice1 != dice3 || dice2 != dice3);
+                    Console.WriteLine("it took you " + attempts + " attempts to roll matching dice");
+                    break;
+                default:
+                    Console.WriteLine("INVALID CHOICE");
+                    break;
             }
-            else if(choice == 2)
-            {
-                Console.WriteLine("Welcome to Medium mode,you have to roll 2 dice until they match!\nPress any key to roll the dice");
-                do
-                {
-                    Console.WriteLine("-------");
-                    Console.ReadKey();
-                    dice1 = rand.Next(1, 7);
-                    Console.WriteLine(dice1);
-                    dice2 = rand.Next(1, 7);
-                    Console.WriteLine(dice2);
-                    attempts++;
-                } while (dice1 != dice2);
-                Console.WriteLine("it took you " + attempts + " attempts to roll matching dice");
-            }
-            else if(choice == 3)
-            {
-                Console.WriteLine("Welcome to Hard mode,you have to roll 3 dice until they all match!\nPress any key to roll the dice");
-                do
-                {
-                    Console.WriteLine("-------");
-                    Console.ReadKey();
-                    dice1 = rand.Next(1, 7);
-                    Console.WriteLine(dice1);
-                    dice2 = rand.Next(1, 7);
-                    Console.WriteLine(dice2);
-                    dice3 = rand.Next(1, 7);
-                    Console.WriteLine(dice3);
-                    attempts++;
-                } while (dice1 != dice2 || dice1 != dice3 || dice2 != dice3);
-                Console.WriteLine("it took you " + attempts + " attempts to roll matching dice");
-            }
-            else
-            {
-                Console.WriteLine("INVALID CHOICE");
-
-            }
-            
-            Console.WriteLine("Thanks for playing!");
-        }
+                       Console.WriteLine("Thanks for playing!");
+        }     
     }
 }
