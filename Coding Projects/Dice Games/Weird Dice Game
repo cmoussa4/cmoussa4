@@ -1,14 +1,11 @@
 using System;
-using System.Collections.Generic;
 
-namespace revision
+namespace Practice
 {
-    class Program
+    class Practice
     {
-
         static void Main(string[] args)
         {
-
             Random random = new Random();
             int dice = 0;
             int attempts = 0;
@@ -16,46 +13,44 @@ namespace revision
             Console.WriteLine("Roll the dice, each number is the points that are added to your talley, get the best score you can!");
             Console.WriteLine("BTW there are 8 different endings, try and get them all...Which is basically near impossible ");
             Console.WriteLine("press a key to roll the dice");
-            while(attempts < 10)
+            while (attempts < 10)
             {
-                
+
                 Console.ReadKey();
                 attempts++;
                 dice = random.Next(1, 7);
                 Console.WriteLine(dice);
-                if (dice == 1)
+                switch (dice)
                 {
-                    points += 1;
-                }
-                if (dice == 2)
-                {
-                    points += 2;
-                }
-                if (dice == 3)
-                {
-                    points += 3;
-                }
-                if (dice == 4)
-                {
-                    points += 4;
-                }
-                if (dice == 5)
-                {
-                    points += 5;
-                }
-                if (dice == 6)
-                {
-                    points += 6;
+                    case 1:
+                     points += 1;
+                     break;
+                    case 2:
+                        points += 2;
+                        break;
+                    case 3:
+                        points += 3;
+                        break;
+                    case 4:
+                        points += 4;
+                        break;
+                    case 5:
+                        points += 5;
+                        break;
+                    case 6:
+                        points += 6;
+                        break;
+                    default:
+                        Console.WriteLine("ERROR");
+                        break;
                 }
                 Console.WriteLine("Points: " + points + " Attempts: " + attempts);
                 Console.WriteLine("------------------");
-                
-                
             }
 
             Console.WriteLine("Your Score is " + points + " Points");
 
-            if(points == 10)
+            if (points == 10)
             {
                 Console.WriteLine("----------------------------------------");
                 Console.WriteLine("you got 10 Points.......... \nBRUH");
@@ -79,7 +74,7 @@ namespace revision
                 Console.WriteLine("you got 30-39 Points! \nyour luck is pretty good, have a cookie ");
                 Console.WriteLine("----------------------------------------");
             }
-            else if (points == 40 || points == 41 || points == 42 || points == 43 || points == 44 || points == 45 || points ==46 || points == 47 || points == 48 || points == 49)
+            else if (points == 40 || points == 41 || points == 42 || points == 43 || points == 44 || points == 45 || points == 46 || points == 47 || points == 48 || points == 49)
             {
                 Console.WriteLine("----------------------------------------");
                 Console.WriteLine("you got 40-49 Points! \nyour luck is incredible you need to enter the lottery!!!!!!!!!!");
@@ -91,7 +86,7 @@ namespace revision
                 Console.WriteLine("you got 50-59 Points! \nYOUR LUCK IS UNBELIEVABLE YOU ARE THE CHOSEN ONE!!!!!!!!!!!!!!!!!!");
                 Console.WriteLine("----------------------------------------");
             }
-            else if(points == 60)
+            else if (points == 60)
             {
                 Console.WriteLine("----------------------------------------");
                 Console.WriteLine("you got a.......... perfect 60 Points \n .......God? is that you?");
@@ -103,8 +98,7 @@ namespace revision
                 Console.WriteLine("you got a.......... uh,an error \nCongatulations on breaking the program!");
                 Console.WriteLine("----------------------------------------");
             }
-            
-
         }
+     
     }
 }
